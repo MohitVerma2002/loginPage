@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(174, 84, 117);
+    font-family: 'Bitter', serif;
+    padding: 40px;
+    overflow: hidden;
+   
+}
+.container{
+    min-height: calc(100vh-40px*2);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: azure;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    bottom: 20px;
+   
+}
+.login-header{
+    margin-bottom: 50px;
+    margin-top: 30px;
+    position: relative;
+    right: 40px;
+    width:450px;
+}
+
+.login-header h1{
+    font-size: 40px;
+    font-family: 'Rubik Distressed', cursive;
+    color:rgb(174, 84, 117) ;
+}
+.login-header p{
+    opacity: 0.7;
+    color: rgb(174, 84, 117);
+    font-family: 'Bitter', serif;
+}
+.login-content{
+    display: flex;
+}
+.login-left {
+    display: flex;
+    padding-left: 150px;
+    flex-direction: column;
+    justify-content: content;
+   background-color: antiquewhite;
+}
+.login-right{
+    background-color: firebrick;
+    display: flex;
+    justify-content: center;
+    img {
+        width: 80%;
+    }
+
+}
+.login-form{
+    width: 450px;
+    position: relative;
+    right: 30px;
+}
+.login-item{
+    padding: 20px 0px;
+}
+.font-item label:not(.checkbox){
+    display: inline-block;
+    background-color: white;
+}
+ input[type='password'],input[type='text']{
+    
+    border-radius: 15px ;
+    border: 1px solid black;
+    width: 250px;
+    margin: 0.3rem;
+    height: 1.5rem;
+    font-size: 15px;
+    padding: 2px;
+}
+.font-item{
+    margin-bottom: 0px;
+}
+.checkbox{
+    padding: 15px 0px;
+    font-size: 16px;
+
+}
+input[type='checkbox']:hover{
+   cursor: pointer;
+}
+input[type='checkbox']{
+    width: 18px;
+    height: 18px;
+}
+
+button{
+    width: 200px;
+    border-radius: 12px;
+    border: 1px solid rgb(227, 7, 88);
+    margin: 30px;
+    height: 2rem;
+    color: black;
+    background-color: rgb(225, 138, 170);
+    font-family: 'Signika', sans-serif;
+    font-size: 18px;
+}
+button:hover{
+    background-color: black;
+    transition-duration: 0.5s;
+    color: white;
+    cursor: pointer;
+}
+.login-form-footer a{
+    text-decoration: none;
+    border: 1px solid black;
+    flex: 2;
+    border-radius: 100px;
+   padding: 0.3rem;
+   justify-content: center;
+   display: flex;
+   color: black;
+   font-size: 18px;
+   gap: 30px;
+   position: relative;
+   right: 10px;
+   width: 300px;
+   font-family: 'Signika', sans-serif;
+   align-items: center;
+}
+.login-form-footer a:hover{
+    background-color: rgb(49, 45, 45);
+    color: white;
+    transition: 0.5s;
+}
+.login-form-footer{
+    margin-bottom: 20px;
+}
+
+/* //media queries */
+@media (max-width:1350px) {
+    .login-left{
+       
+    }
+    .login-form{
+       
+    }
+}
+@media (max-width:768px){
+    body{
+        padding: 20px;
+    }
+    .container{
+        grid-template-columns: auto;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center ;
+        
+    }
+    .login-right{
+        display: none;
+    }
+}
+@media (max-width:450px){
+    .container{
+        grid-template-columns: auto;
+        margin-top: 15px;
+        display: flex;
+        justify-content: center ;
+        align-items:center ;
+    }
+}
